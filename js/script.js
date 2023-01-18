@@ -679,3 +679,121 @@
 // console.log(checkForSpam("[SPAM] How to earn fast money?"))
   
 
+// JS HW_2_1
+
+
+// function checkAge(age) {
+//   if (age >= 18) {
+//     let message;
+//     return message = "You are an adult";
+//   }
+
+//   return message = "You are a minor";
+// }
+// console.log(checkAge(20))
+// console.log(checkAge(8))
+// console.log(checkAge(14))
+// console.log(checkAge(38))
+
+
+// JS HW_2_2
+
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+
+//   if (password === ADMIN_PASSWORD) {
+    
+//     return "Welcome!";
+//   }
+
+//   return "Access denied, wrong password!";
+// }
+// console.log(checkPassword("mangohackzor"))
+// console.log(checkPassword("polyhax"))
+// console.log(checkPassword("jqueryismyjam"))
+
+
+
+// JS HW_2_3
+
+// function checkStorage(available, ordered) {
+
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   }
+
+//   if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+
+//     return "The order is accepted, our manager will contact you";
+// }
+  
+// console.log(checkStorage(100, 50))
+// console.log(checkStorage(100, 130))
+// console.log(checkStorage(70, 0))
+// console.log(checkStorage(200, 20))
+// console.log(checkStorage(200, 250))
+// console.log(checkStorage(150, 0))
+
+
+// JS HW_2_4
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+// console.log(fruits);
+
+
+// JS HW_2_5
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastIndex = fruits.length - 1;
+// const lastElement = fruits[lastIndex];
+
+
+// JS HW_2_6
+
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+
+
+// JS HW_2_7
+
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const fruitsArrayLength = fruits.length;
+
+// console.log(fruitsArrayLength)
+
+
+// JS HW_2_8
+
+// const fruits = ["apple", "peach", "pear", "banana"];
+
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+
+// console.log(lastElementIndex);
+// console.log(lastElement);
+
+
+// JS HW_2_9
+
+// function getExtremeElements(array) {
+
+  
+//   const lastIndex = array.length - 1;
+//   let message;
+//   const arrayPartDel = array.splice(1, lastIndex - 1);
+//   return message = array;
+// }
+// console.log(getExtremeElements([1, 2, 3, 4, 5]));
+// console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+// console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
+
+
+// JS HW_2_10
