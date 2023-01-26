@@ -679,7 +679,7 @@
 // console.log(checkForSpam("[SPAM] How to earn fast money?"))
   
 
-// JS HW_2_1
+// JS HW_2_1_______________________________________________________
 
 
 // function checkAge(age) {
@@ -696,7 +696,7 @@
 // console.log(checkAge(38))
 
 
-// JS HW_2_2
+// JS HW_2_2_______________________________________________________
 
 
 // function checkPassword(password) {
@@ -715,7 +715,7 @@
 
 
 
-// JS HW_2_3
+// JS HW_2_3_______________________________________________________
 
 // function checkStorage(available, ordered) {
 
@@ -738,13 +738,13 @@
 // console.log(checkStorage(150, 0))
 
 
-// JS HW_2_4
+// JS HW_2_4_________________________________________________________
 
 // const fruits = ["apple", "plum", "pear", "orange"];
 // console.log(fruits);
 
 
-// JS HW_2_5
+// JS HW_2_5_________________________________________________________
 
 // const fruits = ["apple", "plum", "pear", "orange"];
 // const firstElement = fruits[0];
@@ -753,7 +753,7 @@
 // const lastElement = fruits[lastIndex];
 
 
-// JS HW_2_6
+// JS HW_2_6_______________________________________________________
 
 
 // const fruits = ["apple", "plum", "pear", "orange"];
@@ -762,7 +762,7 @@
 // fruits[3] = "banana";
 
 
-// JS HW_2_7
+// JS HW_2_7__________________________________________________________
 
 // const fruits = ["apple", "peach", "pear", "banana"];
 // const fruitsArrayLength = fruits.length;
@@ -770,7 +770,7 @@
 // console.log(fruitsArrayLength)
 
 
-// JS HW_2_8
+// JS HW_2_8_______________________________________________________
 
 // const fruits = ["apple", "peach", "pear", "banana"];
 
@@ -781,7 +781,7 @@
 // console.log(lastElement);
 
 
-// JS HW_2_9
+// JS HW_2_9________________________________________________________
 
 // function getExtremeElements(array) {
 
@@ -790,10 +790,510 @@
 //   let message;
 //   const arrayPartDel = array.splice(1, lastIndex - 1);
 //   return message = array;
-// }
+// };
 // console.log(getExtremeElements([1, 2, 3, 4, 5]));
 // console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
 // console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
 
 
-// JS HW_2_10
+// JS HW_2_10_______________________________________________________
+
+
+// function splitMessage(message, delimiter) {
+//   let words;
+//   result = message.split(delimiter);
+//   words = result;
+//   return words;
+// };
+// console.log(splitMessage("Mango hurries to the train", " "));
+// console.log(splitMessage("Mango", ""));
+// console.log(splitMessage("best_for_week", "_"));
+
+
+// JS HW_2_11_____________________________________________________
+
+// function calculateEngravingPrice(message, pricePerWord) {
+
+//   let price;
+//   const result = message.split(" ");
+//   const resultLength = result.length;
+//   price = resultLength * pricePerWord;
+//   return price;
+
+// };
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
+// console.log(calculateEngravingPrice("Web-development is creative work", 40));
+// console.log(calculateEngravingPrice("Web-development is creative work", 20));
+
+
+
+// JS HW_2_12_____________________________________________________
+
+// function makeStringFromArray(array, delimiter) {
+
+//   let string;
+//   string = array.join(delimiter);
+//   return string;
+
+// };
+
+// console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "));
+// console.log(makeStringFromArray(["M", "a", "n", "g", "o"], ""));
+// console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
+
+// JS HW_2_13____________________________________________________
+
+// function slugify(title) {
+  
+//   const array = title.split(" ");
+//   const newArray = array.join("-");
+//   const slug = newArray.toLowerCase();
+  
+//   return slug;
+// };
+// console.log(slugify("Arrays for begginers"));
+// console.log(slugify("Ten secrets of JavaScript"));
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
+
+
+
+
+
+
+
+// JS HW_2_14______________________________________________
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, 4);
+// const lastThreeEls = fruits.slice(2);
+
+
+
+
+
+
+// JS HW_2_15_______________________________________
+
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients);
+
+
+
+
+
+
+// JS HW_2_16_______создай из 2х массивов один , длинна нового масива ограничена числом в переменной  ( функция + массив )________________________________
+
+
+// function makeArray(firstArray, secondArray, maxLength) {
+
+//   arrayConcat = firstArray.concat(secondArray);
+//   const arrayConcatLength = arrayConcat.length;
+
+//   if (arrayConcatLength > maxLength) {
+//     const diference = arrayConcatLength - maxLength;
+//     const arraySlice = arrayConcatLength - diference;
+//     let copyArray = arrayConcat.slice(0, arraySlice);
+//     return copyArray;
+//   }
+//   return arrayConcat;
+// }
+  
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3))
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4) )
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3))
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2))
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4))
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0))
+
+
+
+
+
+
+// JS HW_2_16___________вывод значений от и до ( функция)____________________________
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i +=1 ) {
+//   console.log(i);
+// }
+
+
+
+
+
+
+// JS HW_2_17_______общая сумма  всех чисед до числа указанного(функция)________________________________
+
+// function calculateTotal(number) {
+//   let total = 0;
+//   for (let i = 0; i <= number; i += 1) {
+  
+//     total += i;
+//   };
+//   return total;
+// };
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(3));
+// console.log(calculateTotal(7));
+// console.log(calculateTotal(18));
+// console.log(calculateTotal(24));
+
+
+
+
+
+
+// JS HW_2_19______________перебор по очереди значений массива_________________________
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) {
+//   const fruit = fruits[i];
+//   console.log(fruit);
+// }
+
+
+
+
+
+
+
+// JS HW_2_20________________посчитай общую цену заказов с данными из массива_______________________
+
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i += 1) {
+    
+//     total += order[i];
+//   };
+//   return total;
+// };
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+
+
+
+
+
+
+
+
+// JS HW_2_21________найди самое длинное слово в значении переменной_______________________________
+
+
+
+// function findLongestWord (string) {
+// const stringSplit = string.split(' ');
+// let longestWord = "";
+
+//   for (const word of stringSplit) {
+//     if (word.length > longestWord.length) {
+//     longestWord = word;
+// }
+// }
+//   return longestWord;
+// };
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+
+
+
+
+
+
+
+
+// JS HW_2_22_______функция создания массива с числами от min до max (включая max)________________________________
+
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   for (let i = min; i < max + 1; i += 1) {
+    
+//     numbers.push(i);
+//   }
+//   return numbers;
+// };
+// console.log(createArrayOfNumbers(1, 3));
+// console.log(createArrayOfNumbers(14, 17));
+// console.log(createArrayOfNumbers(29, 34));
+
+
+
+// JS HW_2_23___ проверка массива (numbers) на присутствие и вывоз в новый массив  чисел более чем значение (value)
+
+
+// function filterArray(numbers, value) {
+  
+//   const array = [];
+
+//   for (let i = 0 ; i < numbers.length ; i += 1) {
+    
+//     let number = 0;
+//     number = numbers[i];
+
+//     if (number > value){
+//       array.push(number);
+      
+//     }
+//   };
+//   return array;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+
+
+
+
+
+
+// JS HW_2_24___ функция проверки включает ли в себя массив(fruits) значение переменной(fruit) с ответом true/false__________________
+
+
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return  fruits.includes(fruit);
+// }
+// console.log(checkFruit("plum"))
+// console.log(checkFruit("mandarin"))
+// console.log(checkFruit("pear"))
+// console.log(checkFruit("Pear"))
+// console.log(checkFruit("apple"))
+
+
+
+
+
+
+
+
+// JS HW_2_25__ сравнение значений в двух массивах значений находящихся на одинаково индексируеміх местах и  вывод совпадений в новый массив_______________
+
+
+// function getCommonElements(array1, array2) {
+
+//   const newArr = [];
+//   let numberArr1 = 0;
+//   let numberArr2 = 0;
+  
+//   for (let i = 0; i < array1.length; i += 1) {
+//     numberArr1 = array1[i];
+//   };
+
+//   for (let k = 0; k < array2.length; k += 1) {
+    
+//     numberArr2 = array2[k];
+//   };
+
+//   if (numberArr2 === numberArr1) {
+
+//     newArr.push(numberArr2);
+//   };
+//   return newArr;
+// };
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+
+
+
+
+
+
+
+
+// JS HW_2_25_  функция сравнивает значения двух массивов  на совпадения и если значения совпали выводит в новый массив_________________________
+
+// function getCommonElements(array1, array2) {
+
+//   const newArr = [];
+//   let numberArr1 = 0;
+  
+//   for (let i = 0; i < array1.length; i += 1) {
+//     numberArr1 = array1[i];
+
+//     if (array2.includes(numberArr1)) {
+
+//       newArr.push(numberArr1);
+//     };
+//   };
+//   return newArr;
+// };
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+
+
+
+
+
+// JS HW_2_26_______ функция подсчета  суммсуммы чисел внутри массива через (for of)____________
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+
+//   for (ord of order) {
+//     total += ord;
+//     continue;
+//   }
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]))
+// console.log(calculateTotalPrice([164, 48, 291]))
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]))
+
+
+
+
+
+
+
+
+// JS HW_2_27__  функция перебора массива (numbers)  и вывода чисел из него больше указанного (value) ,через  "for... of""____________
+
+
+// function filterArray(numbers, value) {
+
+//   const filteredNumbers = [];
+  
+//   for (number of numbers) {
+    
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   return filteredNumbers;
+  
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3))
+// console.log(filterArray([1, 2, 3, 4, 5], 4))
+// console.log(filterArray([1, 2, 3, 4, 5], 5))
+// console.log(filterArray([12, 24, 8, 41, 76], 38))
+// console.log(filterArray([12, 24, 8, 41, 76], 20))
+
+
+
+
+
+
+
+
+
+
+
+// JS HW_2_28_______________
+
+
+
+
+
+
+
+
+// JS HW_2_29_______________функция перебирает числа от (start) и до (end)  и ввыбирая только четные пушит их в новый массив (filteredNumbers)
+
+
+// function getEvenNumbers(start, end) {
+
+//   const filteredNumbers = [];
+  
+//   for (let i = start; i <= end ; i += 1){
+//     if (i % 2 !== 0) {
+//     continue;
+//   } else
+//     filteredNumbers.push(i)
+    
+//   }
+//   return filteredNumbers;
+// }
+// console.log(getEvenNumbers(2, 5))
+// console.log(getEvenNumbers(3, 11))
+// console.log(getEvenNumbers(6, 12))
+// console.log(getEvenNumbers(8, 8))
+// console.log(getEvenNumbers(7, 7))
+  
+
+
+
+
+
+// JS HW_2_31____функция выводит первое число от(start) и до (end) без остатка делящееся на (divisor)____
+
+// function findNumber(start, end, divisor) {
+
+//   let number;
+  
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       return number;
+//     }
+//   }
+  
+// }
+// console.log(findNumber(2, 6, 5))
+// console.log(findNumber(8, 17, 3))
+// console.log(findNumber(6, 9, 4))
+// console.log(findNumber(16, 35, 7))
+
+
+
+
+
+
+
+
+// JS HW_2_32___функция перебора массива (array) на наличие переменной (value)с итоговм ответом true/false_____
+
+
+
+
+
+
+// function includes(array, value) {
+
+//   for (const arr of array) {
+  
+//     if (arr === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+
+
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
+
+
